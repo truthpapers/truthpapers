@@ -64,9 +64,15 @@ a{
     display: flex;
     justify-content: center;
     overflow-x: scroll;
-    gap: 20px;
+    gap: 25px;
+    height: 45px;
 }
-
+.nav2-first-a{
+    padding-right: 20px;
+}
+.nav2-last-a{
+    padding-left: 20px;
+}
 
 .right-btn{
     height: 100vh;

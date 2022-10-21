@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 
 
 h2{
@@ -12,14 +15,16 @@ h2{
 
 article{
     direction: rtl;
-    height: 100vh;
     overflow-y: scroll;
+    color: rgb(220, 220, 220);
+    max-width: 700px;
+    margin: auto;
 
 }
 p{
     padding-left:2% ;
     padding-right:2% ;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .posts{
@@ -28,7 +33,7 @@ p{
 }
 main{
     display: grid;
-    grid: auto / repeat(3, 85% 3% 12%);
+    grid: auto / repeat(3, 85% 10px 12%);
 }
 
 .ver-nav{
@@ -37,11 +42,9 @@ main{
     align-items: center;
     gap: 20px;
     font-size: 0.7rem;
-    background-color: aqua;
     overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
-    height: 100vh;
+    background-color: #1b1b1b;
 }
 a{
     text-decoration: none;
@@ -55,14 +58,20 @@ a{
     justify-content: space-evenly;
     height: 50px;
 }
-a{
-    color: #d6d6d6;
 
+ a{
+    color: #aeaeae;
 }
+a:hover{
+    color: white;
+}
+
+
 .nav2{
-    background-color: rgb(85, 12, 206);
+    background-color: #383838;
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow-x: scroll;
     gap: 25px;
     height: 45px;
@@ -75,7 +84,6 @@ a{
 }
 
 .right-btn{
-    height: 100vh;
     border-top: none;
     border-bottom: none;
 }

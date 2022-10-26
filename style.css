@@ -10,7 +10,8 @@
     --oposite-color: #ffffff;
     --font-lateef: 'Lateef', serif;
 }
-body{
+
+body, .container{
     background-color: var(--themecolor);
     color: var(--oposite-color);
 
@@ -25,14 +26,15 @@ h2{
 
 
 p{
-    padding-left:2% ;
-    padding-right:2% ;
+
     padding-bottom: 20px;
+
+   
 }
 
 
 
-main{
+.main{
     display: grid;
     grid: auto / 10% 15% 2% 63% 10%;
     
@@ -74,6 +76,8 @@ margin-left: 5px;
     width: 90%;
     border-radius: 5px;
     margin-top: 20px;
+    background-color: rgb(190, 190, 190);
+    border: none;
 }
 .ver-search::placeholder{
     color: black;  
@@ -82,17 +86,32 @@ margin-left: 5px;
 
 
 
-
-article{
+.author{
+    font-size: medium;
+    margin-bottom: 40px;
+}
+.ar-article{
     overflow-y: scroll;
-    color: rgb(220, 220, 220);
+    color: rgb(190, 190, 190);
     font-size: x-large;
     font-family: var(--font-lateef);
     font-weight: 200;
     border-bottom: thin solid #aeaeae;
     padding-bottom: 40px;
-/*     background-color: red;
- */}
+
+}
+
+ .en-article{
+    overflow-y: scroll;
+    color: rgb(190, 190, 190);
+    font-size: x-large;
+    font-weight: 200;
+    border-bottom: thin solid #aeaeae;
+    /* this ٧ is under articles footer */ 
+    padding-bottom: 100px;
+
+
+ }
 
 
 #articles-lang{
@@ -103,10 +122,20 @@ article{
     align-items: center;
     gap: 20px;
     padding-left: 9.5%;
+    
     }
+    
 
-#articles-lang a{
-}
+    #change-lang-en{
+        height: 60px;
+        background-color: var(--themecolor);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        padding-right: 9.5%;
+        
+    }
 a{
     text-decoration: none;
 }
@@ -148,25 +177,21 @@ a:hover{
     padding-right: 20px;
 }
 
-
-input{
-
-    
-background-color: rgb(190, 190, 190);
-border: none;
-
-}
-
-
-
-
-
-
 .active-ver{
     background-color: var(--themecolor);
 }
 
-footer{
+.articles-footer{
+    border-top: thin solid var(--oposite-color);
+    width: 75%;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: large;
+
+
+}
+
+.footer{
 /*     display: flex;
     flex-direction: column;
     align-items: center; */
@@ -181,17 +206,28 @@ footer{
    margin-bottom: 60px;
 /*    background-color: yellow;
  */
+ 
 }
 
-footer section{
+.footer section{
     
     padding: 30px;
+    color: rgb(190, 190, 190);
    
 }
-li{
-    list-style: none;
+.footer a{
+    color: rgb(59, 115, 201);
+    
 }
+.footer a:hover{
+    text-decoration: underline;
+}
+
 
 .translated-text{
    text-align: left;
+}
+
+.indent-ul-en{
+    padding-left: 2em;
 }
